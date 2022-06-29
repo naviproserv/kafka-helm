@@ -43,6 +43,7 @@ spec:
       type: {{ .Values.kafka.kafka.storage.type}}
       volumes:
       - id: 0
+        class: {{ .Values.kafka.kafka.storage.volumes.class}}
         type: {{ .Values.kafka.kafka.storage.volumes.type}}
         size: {{ .Values.kafka.kafka.storage.volumes.size}}
         deleteClaim: {{ .Values.kafka.kafka.storage.volumes.deleteClaim}}
@@ -67,6 +68,7 @@ spec:
     replicas: {{ .Values.kafka.zookeeper.replicas}}
     resources: {}
     storage:
+      class: {{ .Values.kafka.kafka.storage.volumes.class}}
       type: {{ .Values.kafka.zookeeper.storage.type}}
       size: {{ .Values.kafka.zookeeper.storage.size}}
       deleteClaim: {{ .Values.kafka.zookeeper.storage.deleteClaim}}

@@ -17,12 +17,14 @@ kafka:
       type: jbod
       volumes:
         type: persistent-claim
+        class: managed-premium
         size: 10Gi
         deleteClaim: false
   zookeeper:
     replicas: 3
     storage:
       type: persistent-claim
+      class: managed-premium
       size: 10Gi
       deleteClaim: false
  

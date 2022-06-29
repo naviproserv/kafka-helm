@@ -3,17 +3,17 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-29T10:46:09.572587598Z"
+    created: "2022-06-29T18:23:01.002185466Z"
     dependencies:
     - condition: strimzi.enabled
       name: strimzi-kafka-operator
       repository: https://strimzi.io/charts
       version: 0.29.0
     description: A Helm chart for Kubernetes
-    digest: aa0f0c1f2e2e963f8e3c3f37dc682b25481a6dd31aa480937ff43065b3d07e7b
+    digest: e0b7c070bc2bec763e22bbabd4db162ff2f14f054682953f43c25e996bf4b5bb
     name: kafka
     type: application
     urls:
     - https://naviproserv.github.io/kafka-helm/kafka-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-29T10:46:09.567220558Z"
+generated: "2022-06-29T18:23:00.995915533Z"
